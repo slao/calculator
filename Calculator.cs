@@ -19,7 +19,7 @@ namespace calculator
 			AddOperator (new SubtractOperator ());
 		}
 
-		private void AddOperator(Operator o)
+		public void AddOperator(Operator o)
 		{
 			mOperators [o.Symbol] = o;
 		}
