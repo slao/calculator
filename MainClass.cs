@@ -12,7 +12,7 @@ namespace calculator
 		private static void RunTests()
 		{
 			Calculator c = new Calculator ();
-			c.Compute ("1 + 1");
+			Console.WriteLine(c.Compute ("1 + 1"));
 		}
 	}
 }
