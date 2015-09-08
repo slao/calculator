@@ -36,7 +36,13 @@ namespace calculator
 
 			do {
 				string s = Console.ReadLine ();
-				Console.WriteLine (c.Compute (s));
+				try
+				{
+					Console.WriteLine (c.Compute (s));
+				} catch (Exception e)
+				{
+					Console.WriteLine("Caught exception: " + e);
+				}
 			} while (true);
 		}
 

@@ -36,6 +36,10 @@ namespace calculator
 			for (int i = start; i <= end; ++i) {
 				string word = words[i];
 //				Console.WriteLine ("process " + word);
+
+				// ignore parens for now
+				if (word == "(" || word == ")") continue;
+
 				int n = 0;
 				bool isNumeric = int.TryParse (word, out n);
 				if (isNumeric) {
