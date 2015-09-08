@@ -9,7 +9,14 @@ namespace calculator
 
 		public Calculator()
 		{
+			SetupOperators ();
+		}
+
+		private void SetupOperators()
+		{
 			AddOperator (new PlusOperator ());
+			AddOperator (new MultiplyOperator ());
+			AddOperator (new SubtractOperator ());
 		}
 
 		private void AddOperator(Operator o)

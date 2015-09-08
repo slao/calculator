@@ -51,9 +51,15 @@ namespace calculator
 					} else
 						return null;
 				} else if (value1 != null && value2 != null && operators.ContainsKey(word)) {
-					value1 = new Formula (value1, value2, op);
-					op = operators [word];
-					value2 = null;
+					Operator newOp = operators [word];
+					if (newOp.Priority >= op.Priority) {
+						value1 = new Formula (value1, value2, op);
+						op = operators [word];
+						value2 = null;
+					} else {
+						value2 = ParseHelper (words, i - 1, end, operators);
+						break;
+					}
 				} else {
 					return null;
 				}

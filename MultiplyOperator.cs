@@ -2,23 +2,23 @@
 
 namespace calculator
 {
-	public class PlusOperator : Operator
+	public class MultiplyOperator : Operator
 	{
 		public string Symbol {
 			get {
-				return "+";
+				return "*";
 			}
 		}
 
 		public int Priority {
 			get {
-				return 2;
+				return 1;
 			}
 		}
 
 		public int Calculate(int value1, int value2)
 		{
-			return value1 + value2;
+			return value1 * value2;
 		}
 	}
 }

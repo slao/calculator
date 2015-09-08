@@ -38,5 +38,7 @@
     <Compile Include="PlusOperator.cs" />
     <Compile Include="Formula.cs" />
     <Compile Include="Expression.cs" />
+    <Compile Include="MultiplyOperator.cs" />
+    <Compile Include="SubtractOperator.cs" />
   </ItemGroup>
 </Project>
