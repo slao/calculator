@@ -49,6 +49,7 @@ namespace calculator
 			Console.WriteLine(c.Compute ("5 - 6"));
 			Console.WriteLine(c.Compute ("8 * 4"));
 			Console.WriteLine(c.Compute ("1 + 1 - 4 * 4"));
+			Console.WriteLine(c.Compute ("1 + 1 - 4 / 2"));
 
 			c.AddOperator (new PowerOperator ());
 			Console.WriteLine(c.Compute ("1 + 5 * 2 ^ 3"));

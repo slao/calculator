@@ -17,6 +17,7 @@ namespace calculator
 			AddOperator (new PlusOperator ());
 			AddOperator (new MultiplyOperator ());
 			AddOperator (new SubtractOperator ());
+			AddOperator (new DivideOperator ());
 		}
 
 		public void AddOperator(Operator o)

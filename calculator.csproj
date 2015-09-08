@@ -40,5 +40,6 @@
     <Compile Include="Expression.cs" />
     <Compile Include="MultiplyOperator.cs" />
     <Compile Include="SubtractOperator.cs" />
+    <Compile Include="DivideOperator.cs" />
   </ItemGroup>
 </Project>
