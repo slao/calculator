@@ -7,9 +7,11 @@ Calculator:
 - int Compute(string expr): compute the expression
 
 Usage:
+```
 Calculator c = new Calculator();
 c.AddOperator(new MyOperator());
 c.Compute("1 + 1 * 3");
+```
 
 MainClass is an example of how to use the calculator library. To build and run sample:
 
