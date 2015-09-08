@@ -13,6 +13,7 @@ namespace calculator
 		{
 			Calculator c = new Calculator ();
 			Console.WriteLine(c.Compute ("1 + 1"));
+			Console.WriteLine(c.Compute ("1 + 1 + 1"));
 		}
 	}
 }

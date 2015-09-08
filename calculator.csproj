@@ -33,9 +33,10 @@
   <ItemGroup>
     <Compile Include="MainClass.cs" />
     <Compile Include="Calculator.cs" />
-    <Compile Include="Expression.cs" />
     <Compile Include="Value.cs" />
     <Compile Include="Operator.cs" />
     <Compile Include="PlusOperator.cs" />
+    <Compile Include="Formula.cs" />
+    <Compile Include="Expression.cs" />
   </ItemGroup>
 </Project>

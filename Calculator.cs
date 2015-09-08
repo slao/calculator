@@ -19,7 +19,7 @@ namespace calculator
 
 		public int Compute(string expr)
 		{
-			Expression e = Expression.Parse (expr, mOperators);
+			Expression e = Formula.Parse (expr, mOperators);
 			if (e != null)
 				return e.Compute ();
 			else
